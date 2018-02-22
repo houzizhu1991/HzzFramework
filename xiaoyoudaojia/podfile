@@ -1,0 +1,20 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target 'xiaoyoudaojia' do
+pod 'Alamofire'
+pod 'Moya'
+pod 'SwiftyJSON'
+pod 'Kingfisher'
+pod 'ObjectMapper'
+#pod 'BaiduMapKit'
+pod 'AMapLocation-NO-IDFA'
+pod 'AMap2DMap-NO-IDFA'
+pod 'SVProgressHUD'
+pod 'MJRefresh'
+pod 'JPush'
+pod 'Bugly'
+end
+

@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A17192D2019C3C6005636EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A17192C2019C3C6005636EC /* AppDelegate.swift */; };
+		2A17192F2019C3C6005636EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A17192E2019C3C6005636EC /* ViewController.swift */; };
+		2A1719342019C3C6005636EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1719332019C3C6005636EC /* Assets.xcassets */; };
+		2A1719372019C3C6005636EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1719352019C3C6005636EC /* LaunchScreen.storyboard */; };
+		2A1719422019C3C6005636EC /* xiaoyoudaojiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1719412019C3C6005636EC /* xiaoyoudaojiaTests.swift */; };
+		2A17194D2019C3C6005636EC /* xiaoyoudaojiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A17194C2019C3C6005636EC /* xiaoyoudaojiaUITests.swift */; };
+		2A1719622019DC88005636EC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1719612019DC87005636EC /* Network.swift */; };
+		2A1719642019DE0E005636EC /* HzzConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1719632019DE0E005636EC /* HzzConstants.swift */; };
+		2A1719662019E03E005636EC /* HzzUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1719652019E03E005636EC /* HzzUser.swift */; };
+		2A171971201ADE85005636EC /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A17196D201ADE85005636EC /* BaseNavigationViewController.swift */; };
+		2A171972201ADE85005636EC /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A17196E201ADE85005636EC /* BaseTabBarViewController.swift */; };
+		2A171973201ADE85005636EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A17196F201ADE85005636EC /* BaseViewController.swift */; };
+		2A171974201ADE85005636EC /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A171970201ADE85005636EC /* ViewController+Extension.swift */; };
+		2A171976201AF8D2005636EC /* CommonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A171975201AF8D2005636EC /* CommonViews.swift */; };
+		2AB88A5C2020140A008F0993 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB88A5120201409008F0993 /* PhotoCollectionViewCell.m */; };
+		2AB88A5D2020140A008F0993 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB88A5320201409008F0993 /* PhotoCollectionViewCell.xib */; };
+		2AB88A5E2020140A008F0993 /* SelectImgsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB88A5420201409008F0993 /* SelectImgsViewController.m */; };
+		2AB88A5F2020140A008F0993 /* SelectPhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB88A562020140A008F0993 /* SelectPhotoStoryboard.storyboard */; };
+		2AB88A602020140A008F0993 /* PhotoEnlargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB88A572020140A008F0993 /* PhotoEnlargeViewController.m */; };
+		2AB88A612020140A008F0993 /* PhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB88A592020140A008F0993 /* PhotoContainer.m */; };
+		2AB88A622020140A008F0993 /* PhotoItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB88A5B2020140A008F0993 /* PhotoItemModel.m */; };
+		2AB88A6C202084FF008F0993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB88A6B202084FE008F0993 /* Main.storyboard */; };
+		2ABDD1D6202AAB46000192C9 /* HzzCommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDD1D5202AAB46000192C9 /* HzzCommonModel.swift */; };
+		DDD699D6203EC75D002127A1 /* XYDZAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD699D4203EC75D002127A1 /* XYDZAlertViewController.xib */; };
+		DDD699D7203EC75D002127A1 /* XYDZAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD699D5203EC75D002127A1 /* XYDZAlertViewController.swift */; };
+		DDD699D9203EC95A002127A1 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD699D8203EC95A002127A1 /* BaseWebViewController.swift */; };
+		DDD699DB203EC9F3002127A1 /* HzzWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD699DA203EC9F3002127A1 /* HzzWebViewController.swift */; };
+		FED91F4A985FF6371621B136 /* Pods_xiaoyoudaojia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA944091F4F2C533C01BB8E1 /* Pods_xiaoyoudaojia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A17193E2019C3C6005636EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A1719212019C3C6005636EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A1719282019C3C6005636EC;
+			remoteInfo = xiaoyoudaojia;
+		};
+		2A1719492019C3C6005636EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A1719212019C3C6005636EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A1719282019C3C6005636EC;
+			remoteInfo = xiaoyoudaojia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A1719292019C3C6005636EC /* xiaoyoudaojia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaoyoudaojia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A17192C2019C3C6005636EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A17192E2019C3C6005636EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A1719332019C3C6005636EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A1719362019C3C6005636EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A1719382019C3C6005636EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A17193D2019C3C6005636EC /* xiaoyoudaojiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaoyoudaojiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1719412019C3C6005636EC /* xiaoyoudaojiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xiaoyoudaojiaTests.swift; sourceTree = "<group>"; };
+		2A1719432019C3C6005636EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A1719482019C3C6005636EC /* xiaoyoudaojiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaoyoudaojiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A17194C2019C3C6005636EC /* xiaoyoudaojiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xiaoyoudaojiaUITests.swift; sourceTree = "<group>"; };
+		2A17194E2019C3C6005636EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A1719612019DC87005636EC /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2A1719632019DE0E005636EC /* HzzConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HzzConstants.swift; sourceTree = "<group>"; };
+		2A1719652019E03E005636EC /* HzzUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HzzUser.swift; sourceTree = "<group>"; };
+		2A17196C2019E1B5005636EC /* xiaoyoudaojia-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "xiaoyoudaojia-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A17196D201ADE85005636EC /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		2A17196E201ADE85005636EC /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		2A17196F201ADE85005636EC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2A171970201ADE85005636EC /* ViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		2A171975201AF8D2005636EC /* CommonViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViews.swift; sourceTree = "<group>"; };
+		2AA441532022D12D0019D945 /* xiaoyoudaojia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xiaoyoudaojia.entitlements; sourceTree = "<group>"; };
+		2AB88A5020201409008F0993 /* SelectImgsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectImgsViewController.h; sourceTree = "<group>"; };
+		2AB88A5120201409008F0993 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		2AB88A5220201409008F0993 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		2AB88A5320201409008F0993 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		2AB88A5420201409008F0993 /* SelectImgsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectImgsViewController.m; sourceTree = "<group>"; };
+		2AB88A552020140A008F0993 /* PhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoContainer.h; sourceTree = "<group>"; };
+		2AB88A562020140A008F0993 /* SelectPhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectPhotoStoryboard.storyboard; sourceTree = "<group>"; };
+		2AB88A572020140A008F0993 /* PhotoEnlargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoEnlargeViewController.m; sourceTree = "<group>"; };
+		2AB88A582020140A008F0993 /* PhotoEnlargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoEnlargeViewController.h; sourceTree = "<group>"; };
+		2AB88A592020140A008F0993 /* PhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoContainer.m; sourceTree = "<group>"; };
+		2AB88A5A2020140A008F0993 /* PhotoItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoItemModel.h; sourceTree = "<group>"; };
+		2AB88A5B2020140A008F0993 /* PhotoItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoItemModel.m; sourceTree = "<group>"; };
+		2AB88A6B202084FE008F0993 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2ABDD1D5202AAB46000192C9 /* HzzCommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HzzCommonModel.swift; sourceTree = "<group>"; };
+		2ABDD1D7202C5F43000192C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2ABDD1D8202C5F60000192C9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		39D83C99F1EB1B94AAAD4964 /* Pods-xiaoyoudaojia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaoyoudaojia.release.xcconfig"; path = "Pods/Target Support Files/Pods-xiaoyoudaojia/Pods-xiaoyoudaojia.release.xcconfig"; sourceTree = "<group>"; };
+		44934A88F5FFF77C583FC785 /* Pods-xiaoyoudaojia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaoyoudaojia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaoyoudaojia/Pods-xiaoyoudaojia.debug.xcconfig"; sourceTree = "<group>"; };
+		BA944091F4F2C533C01BB8E1 /* Pods_xiaoyoudaojia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaoyoudaojia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD699D4203EC75D002127A1 /* XYDZAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYDZAlertViewController.xib; sourceTree = "<group>"; };
+		DDD699D5203EC75D002127A1 /* XYDZAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYDZAlertViewController.swift; sourceTree = "<group>"; };
+		DDD699D8203EC95A002127A1 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
+		DDD699DA203EC9F3002127A1 /* HzzWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HzzWebViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1719262019C3C6005636EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED91F4A985FF6371621B136 /* Pods_xiaoyoudaojia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A17193A2019C3C6005636EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1719452019C3C6005636EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0265510F0C337366637FC79D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA944091F4F2C533C01BB8E1 /* Pods_xiaoyoudaojia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A1719202019C3C5005636EC = {
+			isa = PBXGroup;
+			children = (
+				2A17192B2019C3C6005636EC /* xiaoyoudaojia */,
+				2A1719402019C3C6005636EC /* xiaoyoudaojiaTests */,
+				2A17194B2019C3C6005636EC /* xiaoyoudaojiaUITests */,
+				2A17192A2019C3C6005636EC /* Products */,
+				C47C265908D6A341B32ED697 /* Pods */,
+				0265510F0C337366637FC79D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A17192A2019C3C6005636EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A1719292019C3C6005636EC /* xiaoyoudaojia.app */,
+				2A17193D2019C3C6005636EC /* xiaoyoudaojiaTests.xctest */,
+				2A1719482019C3C6005636EC /* xiaoyoudaojiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A17192B2019C3C6005636EC /* xiaoyoudaojia */ = {
+			isa = PBXGroup;
+			children = (
+				2AA441532022D12D0019D945 /* xiaoyoudaojia.entitlements */,
+				2A171977201AFF5D005636EC /* bussiness */,
+				2A17196C2019E1B5005636EC /* xiaoyoudaojia-Bridging-Header.h */,
+				2A17195A2019DAA6005636EC /* commonArchitec */,
+				2A17192C2019C3C6005636EC /* AppDelegate.swift */,
+				2A17192E2019C3C6005636EC /* ViewController.swift */,
+				2AB88A6B202084FE008F0993 /* Main.storyboard */,
+				2A1719332019C3C6005636EC /* Assets.xcassets */,
+				2A1719352019C3C6005636EC /* LaunchScreen.storyboard */,
+				2A1719382019C3C6005636EC /* Info.plist */,
+			);
+			path = xiaoyoudaojia;
+			sourceTree = "<group>";
+		};
+		2A1719402019C3C6005636EC /* xiaoyoudaojiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A1719412019C3C6005636EC /* xiaoyoudaojiaTests.swift */,
+				2A1719432019C3C6005636EC /* Info.plist */,
+			);
+			path = xiaoyoudaojiaTests;
+			sourceTree = "<group>";
+		};
+		2A17194B2019C3C6005636EC /* xiaoyoudaojiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A17194C2019C3C6005636EC /* xiaoyoudaojiaUITests.swift */,
+				2A17194E2019C3C6005636EC /* Info.plist */,
+			);
+			path = xiaoyoudaojiaUITests;
+			sourceTree = "<group>";
+		};
+		2A17195A2019DAA6005636EC /* commonArchitec */ = {
+			isa = PBXGroup;
+			children = (
+				2A1719672019E166005636EC /* OCFile */,
+				2A17195D2019DB91005636EC /* hzzConstant */,
+				2A17195B2019DB91005636EC /* hzzEntity */,
+				2A17195C2019DB91005636EC /* hzzNetwork */,
+				2A1719602019DB91005636EC /* hzzView */,
+				2A17195E2019DB91005636EC /* hzzViewController */,
+			);
+			path = commonArchitec;
+			sourceTree = "<group>";
+		};
+		2A17195B2019DB91005636EC /* hzzEntity */ = {
+			isa = PBXGroup;
+			children = (
+				2A1719652019E03E005636EC /* HzzUser.swift */,
+			);
+			path = hzzEntity;
+			sourceTree = "<group>";
+		};
+		2A17195C2019DB91005636EC /* hzzNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				2A1719612019DC87005636EC /* Network.swift */,
+			);
+			path = hzzNetwork;
+			sourceTree = "<group>";
+		};
+		2A17195D2019DB91005636EC /* hzzConstant */ = {
+			isa = PBXGroup;
+			children = (
+				2A1719632019DE0E005636EC /* HzzConstants.swift */,
+			);
+			path = hzzConstant;
+			sourceTree = "<group>";
+		};
+		2A17195E2019DB91005636EC /* hzzViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DDD699D8203EC95A002127A1 /* BaseWebViewController.swift */,
+				2A17196D201ADE85005636EC /* BaseNavigationViewController.swift */,
+				2A17196E201ADE85005636EC /* BaseTabBarViewController.swift */,
+				2A17196F201ADE85005636EC /* BaseViewController.swift */,
+				DDD699DA203EC9F3002127A1 /* HzzWebViewController.swift */,
+				2A171970201ADE85005636EC /* ViewController+Extension.swift */,
+			);
+			path = hzzViewController;
+			sourceTree = "<group>";
+		};
+		2A1719602019DB91005636EC /* hzzView */ = {
+			isa = PBXGroup;
+			children = (
+				DDD699D5203EC75D002127A1 /* XYDZAlertViewController.swift */,
+				DDD699D4203EC75D002127A1 /* XYDZAlertViewController.xib */,
+				2A171975201AF8D2005636EC /* CommonViews.swift */,
+				2ABDD1D5202AAB46000192C9 /* HzzCommonModel.swift */,
+			);
+			path = hzzView;
+			sourceTree = "<group>";
+		};
+		2A1719672019E166005636EC /* OCFile */ = {
+			isa = PBXGroup;
+			children = (
+				2AB88A5220201409008F0993 /* PhotoCollectionViewCell.h */,
+				2AB88A5120201409008F0993 /* PhotoCollectionViewCell.m */,
+				2AB88A5320201409008F0993 /* PhotoCollectionViewCell.xib */,
+				2AB88A552020140A008F0993 /* PhotoContainer.h */,
+				2AB88A592020140A008F0993 /* PhotoContainer.m */,
+				2AB88A582020140A008F0993 /* PhotoEnlargeViewController.h */,
+				2AB88A572020140A008F0993 /* PhotoEnlargeViewController.m */,
+				2AB88A5A2020140A008F0993 /* PhotoItemModel.h */,
+				2AB88A5B2020140A008F0993 /* PhotoItemModel.m */,
+				2AB88A5020201409008F0993 /* SelectImgsViewController.h */,
+				2AB88A5420201409008F0993 /* SelectImgsViewController.m */,
+				2AB88A562020140A008F0993 /* SelectPhotoStoryboard.storyboard */,
+			);
+			path = OCFile;
+			sourceTree = "<group>";
+		};
+		2A171977201AFF5D005636EC /* bussiness */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bussiness;
+			sourceTree = "<group>";
+		};
+		C47C265908D6A341B32ED697 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44934A88F5FFF77C583FC785 /* Pods-xiaoyoudaojia.debug.xcconfig */,
+				39D83C99F1EB1B94AAAD4964 /* Pods-xiaoyoudaojia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A1719282019C3C6005636EC /* xiaoyoudaojia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1719512019C3C6005636EC /* Build configuration list for PBXNativeTarget "xiaoyoudaojia" */;
+			buildPhases = (
+				24E6963BF78FD7E2E87C35D8 /* [CP] Check Pods Manifest.lock */,
+				2A1719252019C3C6005636EC /* Sources */,
+				2A1719262019C3C6005636EC /* Frameworks */,
+				2A1719272019C3C6005636EC /* Resources */,
+				7BE9AF281B27276A09DA4724 /* [CP] Embed Pods Frameworks */,
+				7FB8D817A42F326120BD316E /* [CP] Copy Pods Resources */,
+				2ABDD1DD202E955B000192C9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xiaoyoudaojia;
+			productName = xiaoyoudaojia;
+			productReference = 2A1719292019C3C6005636EC /* xiaoyoudaojia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A17193C2019C3C6005636EC /* xiaoyoudaojiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1719542019C3C6005636EC /* Build configuration list for PBXNativeTarget "xiaoyoudaojiaTests" */;
+			buildPhases = (
+				2A1719392019C3C6005636EC /* Sources */,
+				2A17193A2019C3C6005636EC /* Frameworks */,
+				2A17193B2019C3C6005636EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A17193F2019C3C6005636EC /* PBXTargetDependency */,
+			);
+			name = xiaoyoudaojiaTests;
+			productName = xiaoyoudaojiaTests;
+			productReference = 2A17193D2019C3C6005636EC /* xiaoyoudaojiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A1719472019C3C6005636EC /* xiaoyoudaojiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1719572019C3C6005636EC /* Build configuration list for PBXNativeTarget "xiaoyoudaojiaUITests" */;
+			buildPhases = (
+				2A1719442019C3C6005636EC /* Sources */,
+				2A1719452019C3C6005636EC /* Frameworks */,
+				2A1719462019C3C6005636EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A17194A2019C3C6005636EC /* PBXTargetDependency */,
+			);
+			name = xiaoyoudaojiaUITests;
+			productName = xiaoyoudaojiaUITests;
+			productReference = 2A1719482019C3C6005636EC /* xiaoyoudaojiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A1719212019C3C6005636EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "罗心恺";
+				TargetAttributes = {
+					2A1719282019C3C6005636EC = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					2A17193C2019C3C6005636EC = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A1719282019C3C6005636EC;
+					};
+					2A1719472019C3C6005636EC = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A1719282019C3C6005636EC;
+					};
+				};
+			};
+			buildConfigurationList = 2A1719242019C3C6005636EC /* Build configuration list for PBXProject "xiaoyoudaojia" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A1719202019C3C5005636EC;
+			productRefGroup = 2A17192A2019C3C6005636EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A1719282019C3C6005636EC /* xiaoyoudaojia */,
+				2A17193C2019C3C6005636EC /* xiaoyoudaojiaTests */,
+				2A1719472019C3C6005636EC /* xiaoyoudaojiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A1719272019C3C6005636EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD699D6203EC75D002127A1 /* XYDZAlertViewController.xib in Resources */,
+				2AB88A6C202084FF008F0993 /* Main.storyboard in Resources */,
+				2AB88A5F2020140A008F0993 /* SelectPhotoStoryboard.storyboard in Resources */,
+				2A1719372019C3C6005636EC /* LaunchScreen.storyboard in Resources */,
+				2AB88A5D2020140A008F0993 /* PhotoCollectionViewCell.xib in Resources */,
+				2A1719342019C3C6005636EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A17193B2019C3C6005636EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1719462019C3C6005636EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24E6963BF78FD7E2E87C35D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2ABDD1DD202E955B000192C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"b9cfcf74b1\"\n# #\nBUGLY_APP_KEY=\"07d4dab2-ebe8-4e59-a025-a9f08899d097\"\n# #\nBUNDLE_IDENTIFIER=\"com.xiaoyoudaojia.courier\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\n#UPLOAD_DEBUG_SYMBOLS=0\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\n# UPLOAD_SIMULATOR_SYMBOLS=0\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\n    echo \"--------------------------------\"\n    echo \"${1}\"\n    echo \"--------------------------------\"\n    exit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\n    P_APP_ID=\"$1\"\n    P_APP_KEY=\"$2\"\n    P_APP_BUNDLE_ID=\"$3\"\n    P_APP_VERSION=\"$4\"\n    P_BSYMBOL_ZIP_FILE=\"$5\"\n    \n    #\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\n        P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\n            P_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n            \n            DSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\n            echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n            \n            echo \"-----------------------------\"\n            STATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\n            echo \"-----------------------------\"\n            \n            UPLOAD_RESULT=\"FAILTURE\"\n            echo \"Bugly server response: ${STATUS}\"\n            if [ ! \"${STATUS}\" ]; then\n            echo \"Error: Failed to upload the zip archive file.\"\n            elif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\n            echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n            UPLOAD_RESULT=\"SUCCESS\"\n            else\n            echo \"Error: Failed to upload the zip archive file to Bugly.\"\n            fi\n            \n            #Remove temp dSYM archive\n            #echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n            #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n            \n            if [ \"$?\" -ne 0 ]; then\n            exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n            fi\n            \n            echo \"--------------------------------\"\n            echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n            \n            if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n            echo \"--------------------------------\"\n            echo \"Failed to upload the dSYM\"\n            echo \"Please check the script and try it again.\"\n            fi\n        }\n        \n        # .dSYM解析为bSYMBOL文件\n        function dSYMParse() {\n            DSYM_FILE=\"$1\"\n            DSYM_SYMBOL_FILE=\"$2\"\n            \n            echo \"--------------------------------\"\n            echo \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n            (/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n            echo \"--------------------------------\"\n            \n        }\n        \n        # 执行\n        function run() {\n            \n            CONFIG_BUGLY_APP_ID=\"$1\"\n            CONFIG_BUGLY_APP_KEY=\"$2\"\n            \n            CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\n            CONFIG_BUGLY_APP_VERSION=\"$4\"\n            CONFIG_DSYM_SOURCE_DIR=\"$5\"\n            CONFIG_DSYM_DEST_DIR=\"$6\"\n            CONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n            \n            # 检查必须参数是否设置\n            if [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\n            exitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\n            fi\n            \n            if [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\n            exitWithMessage \"Error: Bugly App ID not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\n            exitWithMessage \"Error: Bugly App Key not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\n            exitWithMessage \"Error: Bundle Identifier not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\n            exitWithMessage \"Error: App Version not defined.\" 0\n            fi\n            \n            if [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\n            exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\n            fi\n            \n            if [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n            exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\n            fi\n            \n            if [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n            mkdir ${CONFIG_DSYM_DEST_DIR}\n            fi\n            \n            DSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\n            IFS=$'\\n'\n            \n            echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n            RET=\"F\"\n            \n            #\n            for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n            RET=\"T\"\n            echo \"Found dSYM file: $dsymFile\"\n            \n            DSYM_FILE_NAME=${dsymFile##*/}\n                DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\n                DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\n                DSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n                \n                if [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\n                if [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\n                rm -f $DSYM_SYMBOL_ZIP_FILE\n                fi\n                # 如果只上传dSYM，直接压缩dSYM目录\n                zip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\n                else\n                # 使用符号表工具来生成Symbol文件\n                dSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\n                fi\n                \n                # 上传\n                dSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\n                done\n                \n                if [ $RET = \"F\" ]; then\n                exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n                fi\n            }\n            \n            # 在Xcode工程中执行\n            function runInXcode(){\n                echo \"Uploading dSYM to Bugly in Xcode ...\"\n                \n                echo \"Info.Plist : ${INFOPLIST_FILE}\"\n                \n                BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\n                BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n                \n                # 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\n                if [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\n                BUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\n                else\n                BUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\n                fi\n                \n                echo \"--------------------------------\"\n                echo \"Prepare application information.\"\n                echo \"--------------------------------\"\n                \n                echo \"Product Name: ${PRODUCT_NAME}\"\n                echo \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\n                echo \"Version: ${BUNDLE_SHORT_VERSION}\"\n                echo \"Build: ${BUNDLE_VERSION}\"\n                \n                echo \"Bugly App ID: ${BUGLY_APP_ID}\"\n                echo \"Bugly App key: ${BUGLY_APP_KEY}\"\n                echo \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n                \n                echo \"--------------------------------\"\n                echo \"Check the arguments ...\"\n                \n                ##检查模拟器编译是否允许上传符号\n                if [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\n                if [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\n                exitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\n                fi\n                fi\n                \n                ##检查是否是Release模式编译\n                if [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\n                if [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\n                exitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\n                fi\n                fi\n                \n                ##检查是否Archive操作\n                if [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\n                if [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\n                echo \"Archive the package\"\n                else\n                exitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\n                fi\n                fi\n                \n                #\n                run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n            }\n            \n            # 根据Xcode的环境变量判断是否处于Xcode环境\n            INFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n            \n            BuildInXcode=\"F\"\n            if [ -f \"${INFO_PLIST_FILE}\" ]; then\n            BuildInXcode=\"T\"\n            fi\n            \n            if [ $BuildInXcode = \"T\" ]; then\n            runInXcode\n            else\n            echo \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n            # 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\n            BUGLY_APP_ID=\"$1\"\n            BUGLY_APP_KEY=\"$2\"\n            BUNDLE_IDENTIFIER=\"$3\"\n            BUGLY_APP_VERSION=\"$4\"\n            DWARF_DSYM_FOLDER_PATH=\"$5\"\n            SYMBOL_OUTPUT_PATH=\"$6\"\n            UPLOAD_DSYM_ONLY=$7\n            run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\n            fi\n";
+		};
+		7BE9AF281B27276A09DA4724 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xiaoyoudaojia/Pods-xiaoyoudaojia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB8D817A42F326120BD316E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xiaoyoudaojia/Pods-xiaoyoudaojia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A1719252019C3C6005636EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD699D9203EC95A002127A1 /* BaseWebViewController.swift in Sources */,
+				2A171972201ADE85005636EC /* BaseTabBarViewController.swift in Sources */,
+				2AB88A602020140A008F0993 /* PhotoEnlargeViewController.m in Sources */,
+				2A171976201AF8D2005636EC /* CommonViews.swift in Sources */,
+				2A17192F2019C3C6005636EC /* ViewController.swift in Sources */,
+				2A17192D2019C3C6005636EC /* AppDelegate.swift in Sources */,
+				2AB88A5C2020140A008F0993 /* PhotoCollectionViewCell.m in Sources */,
+				2AB88A5E2020140A008F0993 /* SelectImgsViewController.m in Sources */,
+				2AB88A622020140A008F0993 /* PhotoItemModel.m in Sources */,
+				2A1719642019DE0E005636EC /* HzzConstants.swift in Sources */,
+				DDD699DB203EC9F3002127A1 /* HzzWebViewController.swift in Sources */,
+				2A171971201ADE85005636EC /* BaseNavigationViewController.swift in Sources */,
+				DDD699D7203EC75D002127A1 /* XYDZAlertViewController.swift in Sources */,
+				2A171974201ADE85005636EC /* ViewController+Extension.swift in Sources */,
+				2A171973201ADE85005636EC /* BaseViewController.swift in Sources */,
+				2A1719622019DC88005636EC /* Network.swift in Sources */,
+				2ABDD1D6202AAB46000192C9 /* HzzCommonModel.swift in Sources */,
+				2AB88A612020140A008F0993 /* PhotoContainer.m in Sources */,
+				2A1719662019E03E005636EC /* HzzUser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1719392019C3C6005636EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1719422019C3C6005636EC /* xiaoyoudaojiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1719442019C3C6005636EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A17194D2019C3C6005636EC /* xiaoyoudaojiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A17193F2019C3C6005636EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A1719282019C3C6005636EC /* xiaoyoudaojia */;
+			targetProxy = 2A17193E2019C3C6005636EC /* PBXContainerItemProxy */;
+		};
+		2A17194A2019C3C6005636EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A1719282019C3C6005636EC /* xiaoyoudaojia */;
+			targetProxy = 2A1719492019C3C6005636EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A1719352019C3C6005636EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A1719362019C3C6005636EC /* Base */,
+				2ABDD1D7202C5F43000192C9 /* zh-Hans */,
+				2ABDD1D8202C5F60000192C9 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A17194F2019C3C6005636EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A1719502019C3C6005636EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A1719522019C3C6005636EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44934A88F5FFF77C583FC785 /* Pods-xiaoyoudaojia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = xiaoyoudaojia/xiaoyoudaojia.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5XD7NX2645;
+				INFOPLIST_FILE = xiaoyoudaojia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyoudaojia.courier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9c3e58ba-0362-4650-a8f3-d1ca73474817";
+				PROVISIONING_PROFILE_SPECIFIER = xiaoyoudaojiadev;
+				SWIFT_OBJC_BRIDGING_HEADER = "xiaoyoudaojia/xiaoyoudaojia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		2A1719532019C3C6005636EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D83C99F1EB1B94AAAD4964 /* Pods-xiaoyoudaojia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = xiaoyoudaojia/xiaoyoudaojia.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5XD7NX2645;
+				INFOPLIST_FILE = xiaoyoudaojia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyoudaojia.courier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "21a27b67-fd53-40c0-9a4a-9f9a45fcfb11";
+				PROVISIONING_PROFILE_SPECIFIER = xiaoyoudaojia20180209adhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "xiaoyoudaojia/xiaoyoudaojia-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		2A1719552019C3C6005636EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94G967252J;
+				INFOPLIST_FILE = xiaoyoudaojiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xydj.courier.xiaoyoudaojiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xiaoyoudaojia.app/xiaoyoudaojia";
+			};
+			name = Debug;
+		};
+		2A1719562019C3C6005636EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94G967252J;
+				INFOPLIST_FILE = xiaoyoudaojiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xydj.courier.xiaoyoudaojiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xiaoyoudaojia.app/xiaoyoudaojia";
+			};
+			name = Release;
+		};
+		2A1719582019C3C6005636EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94G967252J;
+				INFOPLIST_FILE = xiaoyoudaojiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xydj.courier.xiaoyoudaojiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = xiaoyoudaojia;
+			};
+			name = Debug;
+		};
+		2A1719592019C3C6005636EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 94G967252J;
+				INFOPLIST_FILE = xiaoyoudaojiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xydj.courier.xiaoyoudaojiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = xiaoyoudaojia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A1719242019C3C6005636EC /* Build configuration list for PBXProject "xiaoyoudaojia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A17194F2019C3C6005636EC /* Debug */,
+				2A1719502019C3C6005636EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A1719512019C3C6005636EC /* Build configuration list for PBXNativeTarget "xiaoyoudaojia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1719522019C3C6005636EC /* Debug */,
+				2A1719532019C3C6005636EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A1719542019C3C6005636EC /* Build configuration list for PBXNativeTarget "xiaoyoudaojiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1719552019C3C6005636EC /* Debug */,
+				2A1719562019C3C6005636EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A1719572019C3C6005636EC /* Build configuration list for PBXNativeTarget "xiaoyoudaojiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1719582019C3C6005636EC /* Debug */,
+				2A1719592019C3C6005636EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A1719212019C3C6005636EC /* Project object */;
+}

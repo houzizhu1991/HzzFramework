@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="154"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IGH-ES-KXA">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="154"/>
+                        <color key="backgroundColor" red="0.28610711350000001" green="1" blue="0.1221731086" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s7q-5k-kFp">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="154"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stN-1H-4EQ">
+                        <rect key="frame" x="125" y="2" width="32" height="32"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="stN-1H-4EQ" secondAttribute="height" id="cMC-NF-4DJ"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="click:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8Xj-Yj-i13"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="s7q-5k-kFp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2iD-r2-FJl"/>
+                <constraint firstAttribute="trailing" secondItem="stN-1H-4EQ" secondAttribute="trailing" constant="2" id="FJj-ae-Bpb"/>
+                <constraint firstAttribute="bottom" secondItem="s7q-5k-kFp" secondAttribute="bottom" id="NVz-9c-Vi9"/>
+                <constraint firstItem="IGH-ES-KXA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VpP-8x-hei"/>
+                <constraint firstItem="IGH-ES-KXA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bGM-zK-HNu"/>
+                <constraint firstItem="stN-1H-4EQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="di8-my-sQt"/>
+                <constraint firstAttribute="trailing" secondItem="IGH-ES-KXA" secondAttribute="trailing" id="eNm-HW-x1i"/>
+                <constraint firstAttribute="bottom" secondItem="IGH-ES-KXA" secondAttribute="bottom" id="lEe-mr-Ydk"/>
+                <constraint firstAttribute="trailing" secondItem="s7q-5k-kFp" secondAttribute="trailing" id="rft-xj-Via"/>
+                <constraint firstItem="s7q-5k-kFp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tNS-zd-k59"/>
+                <constraint firstItem="stN-1H-4EQ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.2" id="x9C-w1-ykl"/>
+            </constraints>
+            <size key="customSize" width="159" height="154"/>
+            <connections>
+                <outlet property="contentPhoto" destination="IGH-ES-KXA" id="oJO-fp-mLI"/>
+                <outlet property="coverView" destination="s7q-5k-kFp" id="ySz-qI-Cr7"/>
+                <outlet property="selectBtn" destination="stN-1H-4EQ" id="J1O-5W-wm3"/>
+            </connections>
+            <point key="canvasLocation" x="251.5" y="381"/>
+        </collectionViewCell>
+    </objects>
+</document>
